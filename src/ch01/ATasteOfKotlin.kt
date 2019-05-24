@@ -1,4 +1,5 @@
-package ch01.ex1_ATasteOfKotlin
+//package ch01.ex1_ATasteOfKotlin // package 可以隨便命名
+package ch01
 
 data class Person(val name: String,
                   val age: Int? = null)
