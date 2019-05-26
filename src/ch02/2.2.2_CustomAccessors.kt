@@ -5,9 +5,18 @@ class Rectangle(val height: Int, val width: Int) {
         get() {
             return height == width
         }
+    val isNotSquare: Boolean
+        get() {
+            return height != width
+        }
 }
 
 fun main(args: Array<String>) {
-    val rectangle = Rectangle(41, 43)
-    println(rectangle.isSquare)
+    val height = 41
+    val width = 42
+
+
+    val rectangle = Rectangle(height, width)
+    println("Is it square: " + rectangle.isSquare)
+    println("Is it NOT square: " + rectangle.isNotSquare)
 }
